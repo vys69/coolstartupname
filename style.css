@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+      background:
+          linear-gradient(90deg, black 21px, transparent 1%) center / 22px 22px,
+          linear-gradient(black 21px, transparent 1%) center / 22px 22px,
+      #2d2d2d;
+      background-attachment: fixed;
+  }
+  
+  .blob {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 500px;
+          height: 500px;
+          border-radius: 100%;
+          background-image: linear-gradient(#000000 10%, #ffffff);
+          filter: blur(500px);
+          transition: all 450ms ease-out;
+          position: fixed;
+          pointer-events: none;
+          left: 0;
+          top: 0;
+          transform: translate(calc(-50% + 15px), -50%);
+          z-index: -1;
+  }
